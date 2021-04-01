@@ -7,12 +7,12 @@ package Viewers;
 
 import Controllers.AvaliacaoController;
 import Controllers.DisciplinaController;
-import java.awt.Color;
 import Controllers.EstudanteController;
 import Controllers.ProfessorController;
 import ModelsBean.Disciplina;
 import ModelsBean.Estudante;
 import ModelsBean.Professor;
+import java.awt.Color;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -1568,13 +1568,11 @@ public class Dashboard extends javax.swing.JFrame{
             Professor professor = new Professor();
             ProfessorController control = new ProfessorController();
             professor.setCodigo(codigo);
-            if (control.delete(professor)){
-                JOptionPane.showMessageDialog(null, "Professor Removido");
-            }else{
-                JOptionPane.showMessageDialog(null, "Erro");
-            }
+            control.delete(professor.getCodigo());
+            JOptionPane.showMessageDialog(null, "Professor Removido");
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(Dashboard.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(null, "Erro");
         }
     }//GEN-LAST:event_deleteButtonActionPerformed
 
@@ -1592,13 +1590,11 @@ public class Dashboard extends javax.swing.JFrame{
             Estudante estudante = new Estudante();
             EstudanteController control = new EstudanteController();
             estudante.setCodigo(codigo);      
-            if (control.delete(estudante)){
-                JOptionPane.showMessageDialog(null, "Estudante Removido");
-            }else{
-                JOptionPane.showMessageDialog(null, "Erro");
-            }
+            control.delete(estudante.getCodigo());
+            JOptionPane.showMessageDialog(null, "Estudante Removido");
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(Dashboard.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(null, "Erro");
         }
     }//GEN-LAST:event_deleteButton1ActionPerformed
 
