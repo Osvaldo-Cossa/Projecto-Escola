@@ -18,8 +18,8 @@ import java.sql.SQLException;
 public class ConnectionFactory {
     
     
-    private static final String DRIVER = "com.mysql.jdbc.Driver";
-    private static final String URL = "jdbc:mysql://localhost:3306/escola";
+    private static final String DRIVER = "org.mariadb.jdbc.Driver";
+    private static final String URL = "jdbc:mariadb://localhost:3306/escola";
     private static final String USER = "root";
     private static final String PASS = "";
     
