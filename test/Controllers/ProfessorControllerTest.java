@@ -7,9 +7,8 @@ package Controllers;
 
 import ModelsBean.Professor;
 import java.sql.SQLException;
-import org.junit.Test;
-import static org.junit.Assert.*;
 import org.junit.Ignore;
+import org.junit.Test;
 
 /**
  *
@@ -69,7 +68,7 @@ public class ProfessorControllerTest {
         ProfessorController control = new ProfessorController();
         professor.setCodigo(2);
         
-        if (control.delete(professor)){
+        if (control.delete(professor.getCodigo())){
             System.out.println("Eliminado");
         }else{
             System.out.println("Erro");
