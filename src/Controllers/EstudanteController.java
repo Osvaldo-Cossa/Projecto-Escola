@@ -15,7 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import Viewers.Dashboard;
 /**
  *
  * @author Mr. Savagery
@@ -141,14 +140,14 @@ public class EstudanteController {
         }
     }
     
-    public boolean delete(Estudante estudante){
+    public boolean delete(int codigo){
         
         String sql = "DELETE FROM estudante WHERE codigo = ?";       
         PreparedStatement stat = null;
         
         try {
             stat = con.prepareStatement(sql);
-            stat.setInt(1, estudante.getCodigo());
+            stat.setInt(1, codigo);
             stat.executeUpdate();
             return true;
         } catch (SQLException ex) {

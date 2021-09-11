@@ -141,14 +141,14 @@ public class ProfessorController {
         }
     }
     
-    public boolean delete(Professor professor){
+    public boolean delete(int codigo){
         
         String sql ="DELETE FROM professor WHERE codigo = ?";       
         PreparedStatement stat = null;
         
         try {
             stat = con.prepareStatement(sql);
-            stat.setInt(1, professor.getCodigo());
+            stat.setInt(1, codigo);
             stat.executeUpdate();
             return true;
         } catch (SQLException ex) {
