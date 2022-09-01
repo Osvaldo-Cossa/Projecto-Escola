@@ -14,5 +14,7 @@ Ao importar certifique-se de não verificar o relacionameto com chaves estrangei
 NO USO DO PROGRAMA:
 
 O programa tem 2 Niveis de acesso, cada nivel de acesso com suas funcoes: 
+
   -Do admin(Que pode ser acessado sem senhuma credencial, isto e, nome do usuario e senha nulas, acessivel apenas por clicar em "entrar" na tela inicial);
+  
   -Do Professor(Que pode ser acessado usando o codigo de um professor ja registado na base de dados e senha nula);
