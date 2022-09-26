@@ -167,17 +167,14 @@ public class TeacherDashboard extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(51, 51, 255));
 
         jPanel4.setBackground(new java.awt.Color(204, 255, 255));
-        jPanel4.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("LISTA DE ESTUDANTES");
         jLabel1.setPreferredSize(new java.awt.Dimension(142, 19));
 
         atualizarLista.setBackground(new java.awt.Color(153, 153, 255));
         atualizarLista.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        atualizarLista.setForeground(new java.awt.Color(0, 0, 0));
         atualizarLista.setText("Atualizar Lista");
         atualizarLista.setPreferredSize(new java.awt.Dimension(122, 19));
         atualizarLista.addActionListener(new java.awt.event.ActionListener() {
@@ -206,7 +203,6 @@ public class TeacherDashboard extends javax.swing.JFrame {
         );
 
         estTable.setBackground(new java.awt.Color(204, 204, 255));
-        estTable.setForeground(new java.awt.Color(0, 0, 0));
         estTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -273,17 +269,14 @@ public class TeacherDashboard extends javax.swing.JFrame {
         );
 
         jPanel5.setBackground(new java.awt.Color(204, 255, 255));
-        jPanel5.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("LISTA DAS AVALIACOES EFECTUADAS");
         jLabel4.setPreferredSize(new java.awt.Dimension(142, 19));
 
         atualizarLista3.setBackground(new java.awt.Color(153, 153, 255));
         atualizarLista3.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        atualizarLista3.setForeground(new java.awt.Color(0, 0, 0));
         atualizarLista3.setText("Atualizar Lista");
         atualizarLista3.setPreferredSize(new java.awt.Dimension(122, 19));
         atualizarLista3.addActionListener(new java.awt.event.ActionListener() {
@@ -312,7 +305,6 @@ public class TeacherDashboard extends javax.swing.JFrame {
         );
 
         avalTable.setBackground(new java.awt.Color(204, 204, 255));
-        avalTable.setForeground(new java.awt.Color(0, 0, 0));
         avalTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
